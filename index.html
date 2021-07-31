@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="mainBlock">
+		<p class="logo"> калькулятор</p>
+		<p class="output"><span id="result">0</span></p>
+		<div class="buttons">
+			<div class="numbers__container">
+				<div class="numbers__inner">
+					<button onclick="pressNumber(7)" class="button number">7</button>
+					<button onclick="pressNumber(8)" class="button number">8</button>
+					<button onclick="pressNumber(9)" class="button number">9</button>
+				</div>
+				<div class="numbers__inner">
+					<button onclick="pressNumber(4)" class="button number">4</button>
+					<button onclick="pressNumber(5)" class="button number">5</button>
+					<button onclick="pressNumber(6)" class="button number">6</button>
+				</div>
+				<div class="numbers__inner">
+					<button onclick="pressNumber(1)" class="button number">1</button>
+					<button onclick="pressNumber(2)" class="button number">2</button>
+					<button onclick="pressNumber(3)" class="button number">3</button>
+				</div>
+				<div class="numbers__inner">
+					<button onclick="pressNumber(0);pressNumber(0)" class="button number ">00</button>
+					<button onclick="pressNumber('.')" class="button number">.</button>
+					<button onclick="pressNumber(0)" class="button number">0</button>
+				</div>
+			</div>
+			<div class="math__container">
+				<div class="math__container">
+					<div class="math__inner">
+						<button onclick="numInteraction('%')" class="button math">%</button>
+						<button onclick="numInteraction('c')" class="button math">c</button>
+					</div>
+					<div class="math__inner">
+						<button onclick="action('*')" class="button math">x</button>
+						<button onclick="action('/')" class="button math">/</button>
+					</div>
+					<div class="math__inner">
+						<button onclick="action('+')" class="button math">+</button>
+						<button onclick="action('-')" class="button math">-</button>
+					</div>
+					<div class="math__inner">
+						<button onclick="clearAll()" class="button clear">clear</button>
+						<button onclick="calc()" class="button math">=</button>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
